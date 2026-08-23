@@ -16,6 +16,10 @@ nav:
 theme:
   name: material
   language: ru
+  palette:
+    scheme: slate
+    primary: black
+    accent: grey
   features:
     - navigation.tabs
     - navigation.tabs.sticky
