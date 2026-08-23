@@ -1,0 +1,51 @@
+site_name: SoftwareEngineeringBase
+site_description: Личная база знаний по Software Engineering и C#/.NET
+site_url: https://kirillshyrokyi.github.io/SoftwareEngineeringBase/
+repo_url: https://github.com/KirillShyrokyi/SoftwareEngineeringBase
+repo_name: KirillShyrokyi/SoftwareEngineeringBase
+
+nav:
+  - Home: index.md
+  - Roadmap: roadmap.md
+  - Study System: study-system.md
+  - C#:
+      - Overview: csharp/index.md
+  - OOP:
+      - Overview: oop/index.md
+
+theme:
+  name: material
+  language: ru
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+plugins:
+  - search:
+      lang:
+        - ru
+        - en
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+extra:
+  social: []
