@@ -10,6 +10,7 @@ nav:
   - Study System: study-system.md
   - C#:
       - Overview: csharp/index.md
+      - Variables, Values, Parameters & Scope: csharp/variables-values-scope.md
   - OOP:
       - Overview: oop/index.md
 
