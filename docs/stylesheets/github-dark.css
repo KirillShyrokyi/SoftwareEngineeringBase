@@ -1,0 +1,169 @@
+/* GitHub-inspired dark theme for SoftwareEngineeringBase */
+
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #0d1117;
+  --md-default-bg-color--light: #161b22;
+  --md-default-bg-color--lighter: #21262d;
+  --md-default-bg-color--lightest: #30363d;
+
+  --md-default-fg-color: #c9d1d9;
+  --md-default-fg-color--light: #b1bac4;
+  --md-default-fg-color--lighter: #8b949e;
+  --md-default-fg-color--lightest: #6e7681;
+
+  --md-primary-fg-color: #010409;
+  --md-primary-fg-color--light: #0d1117;
+  --md-primary-fg-color--dark: #010409;
+  --md-primary-bg-color: #f0f6fc;
+  --md-primary-bg-color--light: #c9d1d9;
+
+  --md-accent-fg-color: #58a6ff;
+  --md-accent-fg-color--transparent: rgba(88, 166, 255, 0.12);
+
+  --md-typeset-color: #c9d1d9;
+  --md-typeset-a-color: #58a6ff;
+
+  --md-code-bg-color: #161b22;
+  --md-code-fg-color: #e6edf3;
+
+  --md-footer-bg-color: #010409;
+  --md-footer-bg-color--dark: #010409;
+}
+
+.md-header,
+.md-tabs {
+  background-color: #010409;
+  border-bottom: 1px solid #30363d;
+  box-shadow: none;
+}
+
+.md-header__title,
+.md-tabs__link,
+.md-header__button,
+.md-search__icon {
+  color: #f0f6fc;
+}
+
+.md-tabs__link {
+  opacity: 0.75;
+}
+
+.md-tabs__link--active,
+.md-tabs__link:hover {
+  color: #f0f6fc;
+  opacity: 1;
+}
+
+.md-main,
+.md-main__inner,
+.md-content,
+.md-sidebar {
+  background-color: #0d1117;
+}
+
+.md-sidebar__scrollwrap {
+  scrollbar-color: #30363d #0d1117;
+}
+
+.md-nav__link {
+  color: #8b949e;
+}
+
+.md-nav__link:hover,
+.md-nav__link--active {
+  color: #58a6ff;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6,
+.md-typeset strong {
+  color: #f0f6fc;
+}
+
+.md-typeset h2 {
+  border-bottom: 1px solid #21262d;
+  padding-bottom: 0.3em;
+}
+
+.md-typeset a {
+  color: #58a6ff;
+}
+
+.md-typeset a:hover {
+  color: #79c0ff;
+  text-decoration: underline;
+}
+
+.md-typeset code {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  color: #e6edf3;
+}
+
+.md-typeset pre > code,
+.highlight pre {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+}
+
+.md-typeset blockquote {
+  color: #8b949e;
+  border-left-color: #3b434b;
+}
+
+.md-typeset table:not([class]) {
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: #161b22;
+  color: #f0f6fc;
+}
+
+.md-typeset table:not([class]) td,
+.md-typeset table:not([class]) th {
+  border-color: #30363d;
+}
+
+.md-search__form {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+}
+
+.md-search__input {
+  color: #f0f6fc;
+}
+
+.md-search__input::placeholder {
+  color: #8b949e;
+}
+
+.md-search-result__meta,
+.md-search-result__item {
+  background-color: #0d1117;
+  color: #c9d1d9;
+}
+
+.md-typeset .admonition,
+.md-typeset details {
+  background-color: #161b22;
+  border-color: #30363d;
+  box-shadow: none;
+}
+
+.md-typeset hr {
+  border-bottom-color: #21262d;
+}
+
+.md-footer {
+  border-top: 1px solid #30363d;
+}
