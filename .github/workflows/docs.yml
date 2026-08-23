@@ -36,6 +36,9 @@ jobs:
           cp README.md docs/index.md
           cp ROADMAP.md docs/roadmap.md
           cp STUDY_SYSTEM.md docs/study-system.md
+          sed -i 's|(README.md)|(index.md)|g' docs/roadmap.md docs/study-system.md
+          sed -i 's|(ROADMAP.md)|(roadmap.md)|g' docs/study-system.md
+          sed -i 's|(STUDY_SYSTEM.md)|(study-system.md)|g' docs/roadmap.md
 
       - name: Build MkDocs site
         run: mkdocs build --strict --site-dir site
