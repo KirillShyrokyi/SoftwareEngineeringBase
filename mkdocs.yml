@@ -16,6 +16,7 @@ nav:
       - Class, Object, State & Behavior: oop/class-object-state-behavior.md
       - Access Modifiers: oop/access-modifiers.md
       - Abstraction: oop/abstraction.md
+      - Inheritance: oop/inheritance.md
 
 theme:
   name: material
