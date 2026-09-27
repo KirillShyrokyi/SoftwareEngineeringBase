@@ -17,6 +17,7 @@ nav:
       - Access Modifiers: oop/access-modifiers.md
       - Abstraction: oop/abstraction.md
       - Inheritance: oop/inheritance.md
+      - Composition: oop/composition.md
 
 theme:
   name: material
