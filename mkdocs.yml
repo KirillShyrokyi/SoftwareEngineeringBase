@@ -18,6 +18,7 @@ nav:
       - Abstraction: oop/abstraction.md
       - Inheritance: oop/inheritance.md
       - Composition: oop/composition.md
+      - Polymorphism: oop/polymorphism.md
 
 theme:
   name: material
