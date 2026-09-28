@@ -20,6 +20,7 @@ nav:
       - Composition: oop/composition.md
       - Polymorphism: oop/polymorphism.md
       - Interface: oop/interface.md
+      - Abstract Class: oop/abstract-class.md
 
 theme:
   name: material
