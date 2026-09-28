@@ -21,6 +21,7 @@ nav:
       - Polymorphism: oop/polymorphism.md
       - Interface: oop/interface.md
       - Abstract Class: oop/abstract-class.md
+      - Composition vs Inheritance: oop/composition-vs-inheritance.md
 
 theme:
   name: material
