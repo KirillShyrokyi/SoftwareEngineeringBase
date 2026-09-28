@@ -19,6 +19,7 @@ nav:
       - Inheritance: oop/inheritance.md
       - Composition: oop/composition.md
       - Polymorphism: oop/polymorphism.md
+      - Interface: oop/interface.md
 
 theme:
   name: material
