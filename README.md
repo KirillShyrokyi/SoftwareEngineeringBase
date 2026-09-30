@@ -6,7 +6,7 @@
 
 Этот GitHub-репозиторий хранит исходные Markdown-файлы и историю изменений. Для обычного чтения база публикуется как отдельный документационный сайт на **MkDocs Material**, где доступны верхняя навигация, боковое меню и поиск.
 
-После включения GitHub Pages сайт будет доступен по адресу:
+База опубликована через GitHub Pages и доступна по адресу:
 
 **https://kirillshyrokyi.github.io/SoftwareEngineeringBase/**
 
@@ -38,27 +38,29 @@
 
 ---
 
-## 🧭 Главный маршрут
+## 🧭 Маршрут обучения
 
-```mermaid
-flowchart TD
-    A[1. C# Core] --> B[2. SQL & Databases]
-    B --> C[3. HTTP & REST]
-    C --> D[4. ASP.NET Core]
-    D --> E[5. Entity Framework Core]
-    E --> F[6. Git & GitHub]
-    F --> G[7. Testing & Quality]
-    G --> H[8. Docker / Linux / CI-CD]
-    H --> I[9. English & Teamwork]
-    I --> J[10. Portfolio & Interview Readiness]
+Единственный источник истины для порядка тем и текущего подтверждённого прогресса — [`ROADMAP.md`](ROADMAP.md). README не задаёт отдельный маршрут и не должен конкурировать с Roadmap.
 
-    K[Architecture & Engineering Thinking] -. развивается параллельно .-> A
-    K -.-> D
-    K -.-> G
-    K -.-> J
+На верхнем уровне движение выглядит так:
+
+```text
+Programming fundamentals
+        ↓
+C# language model
+        ↓
+OOP + design principles
+        ↓
+HTTP / SQL / databases
+        ↓
+ASP.NET Core + EF Core
+        ↓
+Testing + security + deployment
+        ↓
+Independent engineering work
 ```
 
-Это не означает, что архитектуру нужно отложить до конца. **Architecture, debugging, security и engineering thinking проходят через весь маршрут поперёк остальных тем.**
+При этом architecture, debugging, security, Git и engineering thinking связываются с основным маршрутом там, где для них уже есть необходимые зависимости. Точный порядок и статус каждой темы смотри в `ROADMAP.md`.
 
 ---
 
