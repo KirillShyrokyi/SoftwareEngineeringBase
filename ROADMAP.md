@@ -55,7 +55,7 @@ Independent engineering work
 - [x] `if / else`;
 - [x] `switch`;
 - [x] `for`, `foreach`, `while`;
-- [ ] methods — методы;
+- [x] methods — методы;
 - [x] parameters — параметры;
 - [x] `return`;
 - [x] `ref`;
