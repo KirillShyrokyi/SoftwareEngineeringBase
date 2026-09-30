@@ -96,18 +96,18 @@ STATE CHANGE / RESULT
 
 - [x] class;
 - [x] object;
-- [ ] constructor;
-- [ ] property;
-- [ ] field;
-- [ ] `public`, `private`, `protected`, `internal`;
-- [ ] encapsulation;
-- [ ] abstraction;
-- [ ] inheritance;
-- [ ] composition;
-- [ ] polymorphism;
-- [ ] interface;
-- [ ] abstract class;
-- [ ] composition vs inheritance.
+- [x] constructor;
+- [x] property;
+- [x] field;
+- [x] `public`, `private`, `protected`, `internal`;
+- [x] encapsulation;
+- [x] abstraction;
+- [x] inheritance;
+- [x] composition;
+- [x] polymorphism;
+- [x] interface;
+- [x] abstract class;
+- [x] composition vs inheritance.
 
 Ключевая мысль:
 
