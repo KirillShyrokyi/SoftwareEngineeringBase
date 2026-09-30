@@ -666,4 +666,4 @@ not visible outside its scope
 
 ## Следующий шаг
 
-Базовая модель `ref` и reference types закреплена. Следующий шаг — перейти к более системному устройству классов и объектов: fields, properties, constructors, encapsulation и поведению экземпляров.
+Базовая модель `ref` и reference types подтверждена на уровне 🟢. Следующий шаг — перейти к более системному устройству классов и объектов: fields, properties, constructors, encapsulation и поведению экземпляров.
