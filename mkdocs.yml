@@ -10,7 +10,9 @@ nav:
   - Study System: study-system.md
   - C#:
       - Overview: csharp/index.md
+      - Basic Types & Nullable Values: csharp/basic-types-nullable.md
       - Variables, Values, Parameters & Scope: csharp/variables-values-scope.md
+      - Control Flow & Loops: csharp/control-flow-loops.md
   - OOP:
       - Overview: oop/index.md
       - Class, Object, State & Behavior: oop/class-object-state-behavior.md
