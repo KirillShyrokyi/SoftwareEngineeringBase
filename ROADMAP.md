@@ -59,7 +59,7 @@ Independent engineering work
 - [x] parameters — параметры;
 - [x] `return`;
 - [x] `ref`;
-- [ ] `out`;
+- [x] `out`;
 - [ ] arrays;
 - [ ] `List<T>`;
 - [ ] `Dictionary<TKey,TValue>`;
