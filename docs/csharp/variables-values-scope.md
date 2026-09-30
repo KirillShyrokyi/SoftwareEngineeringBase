@@ -1,6 +1,6 @@
 # Variables, Values, Parameters & Scope
 
-Статус: 🟢 базовая модель закреплена: values, parameters, scope, `ref` и reference types
+Статус: 🟢 Понимаю — базовая модель values, parameters, scope, `ref` и reference types
 
 Эта тема описывает поток данных в простых C#-методах на примерах с `int`.
 

@@ -25,6 +25,21 @@ Prefer neutral educational examples created for this repository, such as:
 
 Do not reproduce private source code, internal names, architecture, business logic, configuration, credentials, tokens, secrets, or other closed context.
 
+## Rule hierarchy and required reading
+
+Before starting or continuing a learning task, read the current `STUDY_SYSTEM.md` and the relevant part of `ROADMAP.md`. Do not rely only on memory from an earlier chat.
+
+Use this responsibility hierarchy:
+
+1. `AI_POLICY.md` + `CONTRIBUTING.md` — privacy and publication boundaries;
+2. `AGENTS.md` — mandatory AI behavior and routing to the rules;
+3. `STUDY_SYSTEM.md` — single source of truth for how learning, verification, statuses and Save Points work;
+4. `ROADMAP.md` — what to learn and the current verified progress;
+5. `docs/...` — topic notes that preserve established knowledge;
+6. `README.md` — human-friendly introduction, not a competing rule source.
+
+A higher-level file controls only its own responsibility. If a genuine conflict cannot be resolved by this hierarchy, do not silently choose a convenient interpretation. Preserve the established system and ask the repository owner before making a fundamental methodological change.
+
 ## Learning workflow
 
 The repository should represent the learner's actual established understanding.
@@ -41,7 +56,21 @@ When such a checkpoint is reached and repository write access is available, save
 
 Only save understanding that has actually been demonstrated. Do not mark incomplete, untested, or merely assumed knowledge as understood or mastered.
 
+At a Save Point, update both verified Roadmap progress and any useful topic note needed to preserve the learner's demonstrated mental model. A checkbox alone is insufficient when no adequate note exists.
+
+## Maintenance authority
+
+The AI may autonomously maintain the established system: fix verified technical errors, remove internal contradictions, correct wording or navigation without changing meaning, update learning notes at Save Points, and change statuses according to `STUDY_SYSTEM.md`.
+
+When a technical claim may depend on language/framework version or current behavior, verify it against authoritative current documentation before correcting the repository.
+
+Do not autonomously redefine the learning methodology, status meanings, Definition of Done, privacy boundary, Save Point behavior, or other fundamental agreements.
+
+Correcting a factual note does not by itself change the learner's status. Learning status changes require evidence about the learner's current understanding.
+
 ## References
 
 - `AI_POLICY.md`
 - `CONTRIBUTING.md`
+- `STUDY_SYSTEM.md`
+- `ROADMAP.md`
