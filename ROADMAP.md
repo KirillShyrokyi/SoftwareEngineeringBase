@@ -40,13 +40,13 @@ Independent engineering work
 
 ### 1. База C# — C# Fundamentals `Core`
 
-- [ ] primitive/basic types: `int`, `double`, `decimal`, `bool`, `string`, `DateTime`;
-- [ ] nullable types;
-- [ ] variables — переменные;
-- [ ] scope — область видимости;
-- [ ] `if / else`;
-- [ ] `switch`;
-- [ ] `for`, `foreach`, `while`;
+- [x] primitive/basic types: `int`, `double`, `decimal`, `bool`, `string`, `DateTime`;
+- [x] nullable types;
+- [x] variables — переменные;
+- [x] scope — область видимости;
+- [x] `if / else`;
+- [x] `switch`;
+- [x] `for`, `foreach`, `while`;
 - [ ] methods — методы;
 - [ ] parameters — параметры;
 - [ ] `return`;
