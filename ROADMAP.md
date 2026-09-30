@@ -56,9 +56,10 @@ Independent engineering work
 - [x] `switch`;
 - [x] `for`, `foreach`, `while`;
 - [ ] methods — методы;
-- [ ] parameters — параметры;
-- [ ] `return`;
-- [ ] `ref` / `out`;
+- [x] parameters — параметры;
+- [x] `return`;
+- [x] `ref`;
+- [ ] `out`;
 - [ ] arrays;
 - [ ] `List<T>`;
 - [ ] `Dictionary<TKey,TValue>`;
@@ -93,8 +94,8 @@ STATE CHANGE / RESULT
 
 ## 2. OOP — Object-Oriented Programming `Core`
 
-- [ ] class;
-- [ ] object;
+- [x] class;
+- [x] object;
 - [ ] constructor;
 - [ ] property;
 - [ ] field;
@@ -226,14 +227,14 @@ async = do not waste a thread while waiting for I/O
 ## 9. Memory in C# `Core`
 
 - [ ] value types;
-- [ ] reference types;
+- [x] reference types;
 - [ ] stack;
 - [ ] heap;
 - [ ] Garbage Collector — GC;
 - [ ] boxing / unboxing;
 - [ ] immutable types;
 - [ ] почему `string` immutable;
-- [ ] передача значений и ссылок между методами;
+- [x] передача значений и ссылок между методами;
 - [ ] reference equality vs value equality.
 
 ---
