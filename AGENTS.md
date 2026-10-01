@@ -58,6 +58,10 @@ Only save understanding that has actually been demonstrated. Do not mark incompl
 
 At a Save Point, update both verified Roadmap progress and any useful topic note needed to preserve the learner's demonstrated mental model. A checkbox alone is insufficient when no adequate note exists.
 
+If a Save Point creates or renames a documentation page, keep the published documentation navigation in `mkdocs.yml` synchronized in the same checkpoint. Treat documentation consistency as part of the Save Point rather than as later cleanup.
+
+After repository changes that trigger documentation CI, verify the resulting GitHub Actions run when the available tools expose it. A failed documentation build means the technical part of the Save Point is not complete: inspect the failing job, fix the verified cause, and retry instead of leaving the repository knowingly red.
+
 ## Maintenance authority
 
 The AI may autonomously maintain the established system: fix verified technical errors, remove internal contradictions, correct wording or navigation without changing meaning, update learning notes at Save Points, and change statuses according to `STUDY_SYSTEM.md`.
