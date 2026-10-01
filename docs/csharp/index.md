@@ -17,15 +17,16 @@
 
 ## Подтверждённая база
 
-Уже сохранены подтверждённые mental models для basic types и nullable values, variables/values/parameters/scope, control flow, `return`, `ref`, `out`, методов, массивов и базовой модели reference types.
+Уже сохранены подтверждённые mental models для basic types и nullable values, variables/values/parameters/scope, control flow, `return`, `ref`, `out`, методов, массивов, `List<T>` и базовой модели reference types.
 
 - [Methods — методы](methods.md)
 - [Out parameters — выходные параметры](out-parameters.md)
 - [Arrays — массивы](arrays.md)
+- [List<T> — изменяемая коллекция](list.md)
 
 ## Текущая тема
 
-После подтверждения `arrays` следующий неподтверждённый пункт фундаментального блока в `ROADMAP.md` — **List<T>**.
+После подтверждения `List<T>` следующий неподтверждённый пункт фундаментального блока в `ROADMAP.md` — **Dictionary<TKey, TValue>**.
 
 !!! note "Правило раздела"
     Мы не записываем тему как подтверждённую только потому, что она была прочитана. Сначала нужно доказать понимание ответами, примерами и вопросами.
