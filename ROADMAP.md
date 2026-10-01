@@ -60,7 +60,7 @@ Independent engineering work
 - [x] `return`;
 - [x] `ref`;
 - [x] `out`;
-- [ ] arrays;
+- [x] arrays;
 - [ ] `List<T>`;
 - [ ] `Dictionary<TKey,TValue>`;
 - [ ] `HashSet<T>`;
