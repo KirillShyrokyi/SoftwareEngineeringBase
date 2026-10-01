@@ -62,7 +62,7 @@ Independent engineering work
 - [x] `out`;
 - [x] arrays;
 - [x] `List<T>`;
-- [ ] `Dictionary<TKey,TValue>`;
+- [x] `Dictionary<TKey,TValue>`;
 - [ ] `HashSet<T>`;
 - [ ] generics;
 - [ ] enums;
