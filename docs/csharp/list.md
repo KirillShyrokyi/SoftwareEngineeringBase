@@ -1,6 +1,6 @@
 # List<T> — изменяемая коллекция
 
-[← C#](index.md) · [Roadmap](../../ROADMAP.md)
+[← C#](index.md) · [Roadmap](../roadmap.md)
 
 ## Простая модель
 
