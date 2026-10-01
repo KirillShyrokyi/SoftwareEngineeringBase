@@ -13,6 +13,11 @@ nav:
       - Basic Types & Nullable Values: csharp/basic-types-nullable.md
       - Variables, Values, Parameters & Scope: csharp/variables-values-scope.md
       - Control Flow & Loops: csharp/control-flow-loops.md
+      - Methods: csharp/methods.md
+      - Out Parameters: csharp/out-parameters.md
+      - Arrays: csharp/arrays.md
+      - List<T>: csharp/list.md
+      - Dictionary<TKey, TValue>: csharp/dictionary.md
   - OOP:
       - Overview: oop/index.md
       - Class, Object, State & Behavior: oop/class-object-state-behavior.md
