@@ -61,7 +61,7 @@ Independent engineering work
 - [x] `ref`;
 - [x] `out`;
 - [x] arrays;
-- [ ] `List<T>`;
+- [x] `List<T>`;
 - [ ] `Dictionary<TKey,TValue>`;
 - [ ] `HashSet<T>`;
 - [ ] generics;
