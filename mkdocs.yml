@@ -18,6 +18,7 @@ nav:
       - Arrays: csharp/arrays.md
       - List<T>: csharp/list.md
       - Dictionary<TKey, TValue>: csharp/dictionary.md
+      - HashSet<T>: csharp/hashset.md
   - OOP:
       - Overview: oop/index.md
       - Class, Object, State & Behavior: oop/class-object-state-behavior.md
