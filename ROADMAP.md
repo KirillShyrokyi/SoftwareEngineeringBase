@@ -65,7 +65,7 @@ Independent engineering work
 - [x] `Dictionary<TKey,TValue>`;
 - [x] `HashSet<T>`;
 - [x] generics;
-- [ ] enums;
+- [x] enums;
 - [ ] records;
 - [ ] tuples;
 - [ ] exceptions: `try/catch/finally`;
