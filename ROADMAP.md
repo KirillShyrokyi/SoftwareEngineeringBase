@@ -64,7 +64,7 @@ Independent engineering work
 - [x] `List<T>`;
 - [x] `Dictionary<TKey,TValue>`;
 - [x] `HashSet<T>`;
-- [ ] generics;
+- [x] generics;
 - [ ] enums;
 - [ ] records;
 - [ ] tuples;
