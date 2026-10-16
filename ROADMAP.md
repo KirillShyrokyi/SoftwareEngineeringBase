@@ -70,7 +70,7 @@ Independent engineering work
 - [x] tuples;
 - [x] exceptions: `try/catch/finally`;
 - [x] `using`;
-- [ ] namespaces.
+- [x] namespaces.
 
 Базовые `List<T>`, `Dictionary<TKey, TValue>` и `HashSet<T>` в этом разделе подтверждены как работа с коллекциями и их основными операциями. Раздел **Collections & Complexity** ниже — отдельный углублённый проход: выбор структуры с учётом стоимости операций, `Queue<T>`, `Stack<T>` и Big O. Его незакрытые пункты не отменяют уже подтверждённую базу.
 
