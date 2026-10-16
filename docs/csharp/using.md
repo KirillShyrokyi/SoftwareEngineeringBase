@@ -1,14 +1,24 @@
-# Using — namespaces and resource cleanup
+# Using — пространства имён и освобождение ресурсов
 
-## Two meanings
+## Два разных назначения
 
-`using System.IO;` makes types from the namespace available by their short names, such as `StreamReader`. It does not create objects or import runtime resources.
+`using System.IO;` — директива, позволяющая обращаться к типам из пространства имён по короткому имени. Например, писать `StreamReader` вместо `System.IO.StreamReader`. Она не создаёт объекты и не загружает библиотеку автоматически.
 
-`using (var reader = new StreamReader("data.txt")) { ... }` arranges for `reader.Dispose()` to be called on leaving that block, even when its body throws an exception. It does not catch that exception.
+`using` для ресурса решает другую задачу: своевременно вызвать метод освобождения ресурсов `Dispose()`.
 
-`using var reader = new StreamReader("data.txt");` instead calls `Dispose()` when the containing scope ends (for example, at the end of the method).
+## Using statement — освобождение после блока
 
-## Connection to finally
+```csharp
+using (var reader = new StreamReader("data.txt"))
+{
+    Console.WriteLine(reader.ReadToEnd());
+}
+Console.WriteLine("Готово");
+```
+
+После выхода из блока `using` вызывается `Dispose()`, если объект был успешно создан. Это происходит и при исключении внутри блока. При этом `using` не перехватывает исключение.
+
+По смыслу конструкция близка к `try/finally`:
 
 ```csharp
 var reader = new StreamReader("data.txt");
@@ -22,33 +32,45 @@ finally
 }
 ```
 
-This is the conceptual equivalent of the resource-managing `using` statement when construction succeeds.
-
-## IDisposable
-
-`IDisposable` defines the `Dispose()` contract. A class implements resource cleanup; `using` calls that cleanup automatically. C# also supports compatible pattern-based `Dispose` implementations.
+## Using declaration — освобождение после области видимости
 
 ```csharp
-class TestResource : IDisposable
+void Read()
+{
+    using var reader = new StreamReader("data.txt");
+    Console.WriteLine("A");
+    Console.WriteLine(reader.ReadToEnd());
+    Console.WriteLine("B");
+}
+```
+
+Здесь `Dispose()` вызывается при выходе из текущей области видимости, то есть после строки `B`, перед завершением метода.
+
+## Зачем нужен IDisposable
+
+`IDisposable` — интерфейс с контрактом `Dispose()`. Класс определяет, как освобождать свои ресурсы, а `using` автоматически вызывает этот метод. В C# также допускается подходящий метод `Dispose()` по шаблону (pattern-based disposal).
+
+```csharp
+class Resource : IDisposable
 {
     public void Dispose() => Console.WriteLine("D");
 }
 
-using (var resource = new TestResource())
+using (var resource = new Resource())
 {
     Console.WriteLine("A");
 }
 Console.WriteLine("B");
 ```
 
-Output: `A`, `D`, `B`.
+Результат: `A`, `D`, `B`.
 
-## Mental model
+## Ментальная модель (mental model)
 
-- `using Namespace;` shortens type names.
-- `using (...) { }` disposes after the block.
-- `using var ...;` disposes at the end of the containing scope.
-- `IDisposable` provides a cleanup contract.
-- `using` manages resources; it does not handle exceptions.
+- `using Namespace;` — сокращает имена типов.
+- `using (...) { }` — вызывает `Dispose()` при выходе из блока.
+- `using var ...;` — вызывает `Dispose()` при выходе из текущей области.
+- `IDisposable` — контракт освобождения ресурсов.
+- `using` управляет ресурсами, но не обрабатывает исключения.
 
-**Status: 🟢 Understands.** The two meanings of `using`, disposal timing, exception behavior and the role of `IDisposable` have been demonstrated. Independent practice for 🔵 has not been verified.
+**Статус: 🟢 Понимаю.** Подтверждены оба назначения `using`, момент освобождения ресурсов, поведение при исключении и связь с `IDisposable`. Самостоятельная практика для 🔵 пока не подтверждена.
