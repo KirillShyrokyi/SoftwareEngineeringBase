@@ -17,7 +17,7 @@
 
 ## Подтверждённая база
 
-Уже сохранены подтверждённые mental models для basic types и nullable values, variables/values/parameters/scope, control flow, `return`, `ref`, `out`, методов, массивов, `List<T>`, `Dictionary<TKey, TValue>`, `HashSet<T>`, generics, enums и базовой модели reference types.
+Уже сохранены подтверждённые mental models для basic types и nullable values, variables/values/parameters/scope, control flow, `return`, `ref`, `out`, методов, массивов, `List<T>`, `Dictionary<TKey, TValue>`, `HashSet<T>`, generics, enums, records и базовой модели reference types.
 
 - [Methods — методы](methods.md)
 - [Out parameters — выходные параметры](out-parameters.md)
@@ -27,10 +27,11 @@
 - [HashSet<T> — множество уникальных элементов](hashset.md)
 - [Generics — обобщённый код без потери типа](generics.md)
 - [Enums — конечный набор именованных значений](enums.md)
+- [Records — сравнение данных и изменённые копии](records.md)
 
 ## Текущая тема
 
-После подтверждения enums следующий неподтверждённый пункт фундаментального блока в `ROADMAP.md` — **records**.
+После подтверждения records следующий неподтверждённый пункт фундаментального блока в `ROADMAP.md` — **tuples**.
 
 !!! note "Правило раздела"
     Мы не записываем тему как подтверждённую только потому, что она была прочитана. Сначала нужно доказать понимание ответами, примерами и вопросами.
