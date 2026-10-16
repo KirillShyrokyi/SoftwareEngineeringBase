@@ -67,7 +67,7 @@ Independent engineering work
 - [x] generics;
 - [x] enums;
 - [x] records;
-- [ ] tuples;
+- [x] tuples;
 - [ ] exceptions: `try/catch/finally`;
 - [ ] `using`;
 - [ ] namespaces.
