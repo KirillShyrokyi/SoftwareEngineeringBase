@@ -1,24 +1,77 @@
-# Namespaces
+# Namespaces — пространства имён
 
-A namespace gives a type a logical name independent of its physical source file path.
+## Какую проблему решают
+
+В разных частях программы могут существовать классы с одинаковым коротким названием. Пространство имён (**namespace**) позволяет различать их по полному имени типа.
 
 ```csharp
-namespace Shop { public class Product { } }
-namespace Warehouse { public class Product { } }
+namespace Shop
+{
+    public class Product { }
+}
+
+namespace Warehouse
+{
+    public class Product { }
+}
 ```
 
-These are different types: `Shop.Product` and `Warehouse.Product`. When both namespaces are imported, an unqualified `Product` can be ambiguous (CS0104). Use a fully qualified name such as `Shop.Product` or an alias.
+Это два разных типа: `Shop.Product` и `Warehouse.Product`.
 
-A file in `MyProject/Services/Calculator.cs` can declare `namespace Mathematics;`. The type's full name is then `Mathematics.Calculator`, not `MyProject.Services.Calculator`. Matching namespaces to directories is a useful convention, not a C# requirement.
+## Конфликт имён (ambiguous reference)
 
-`using Shop;` lets code refer to available types by short name. Namespaces organize type names but do not enforce architectural boundaries: separate projects and dependency rules serve that purpose.
+```csharp
+using Shop;
+using Warehouse;
 
-## Mental model
+Product product = new Product(); // CS0104: неоднозначная ссылка
+```
 
-- Directory: physical file location.
-- Namespace: logical type naming.
-- Fully qualified name: identifies a type without ambiguity.
-- Using directive: allows short names when unambiguous.
-- Folder/namespace alignment: convention rather than language rule.
+Компилятор не может выбрать нужный `Product`. Указываем полное имя:
 
-**Status: 🟢 Understands.** Reasoning about duplicate class names, name ambiguity and directory independence was demonstrated. Independent practical use for 🔵 has not been verified.
+```csharp
+Shop.Product product = new Shop.Product();
+```
+
+Или создаём псевдоним (**alias**):
+
+```csharp
+using ShopProduct = Shop.Product;
+ShopProduct product = new ShopProduct();
+```
+
+## Папка и namespace — не одно и то же
+
+Файл физически расположен здесь:
+
+```text
+MyProject/
+└── Services/
+    └── Calculator.cs
+```
+
+Но внутри него может быть написано:
+
+```csharp
+namespace Mathematics;
+
+public class Calculator { }
+```
+
+Полное имя класса — `Mathematics.Calculator`, а не `MyProject.Services.Calculator`. Компилятор использует объявление `namespace` в коде, а не путь к файлу.
+
+Обычно разработчики согласуют структуру папок и пространств имён для удобства навигации. Это **соглашение (convention)**, а не обязательное правило C#.
+
+## Связь с архитектурой
+
+`namespace` логически организует имена типов, но сам по себе не создаёт архитектурной изоляции. За разделение проектов и направление зависимостей отвечают другие механизмы.
+
+## Ментальная модель (mental model)
+
+- Папка — физическое расположение файла.
+- `namespace` — логическое пространство имён типов.
+- Полное имя типа — однозначное обращение к классу.
+- `using Namespace;` — короткие имена при отсутствии конфликта.
+- Совпадение папок и пространств имён — соглашение.
+
+**Статус: 🟢 Понимаю.** Подтверждены смысл пространств имён, конфликты одинаковых названий и независимость `namespace` от структуры папок. Самостоятельная практика для 🔵 пока не подтверждена.
