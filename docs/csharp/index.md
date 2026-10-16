@@ -17,7 +17,7 @@
 
 ## Подтверждённая база
 
-Уже сохранены подтверждённые mental models для basic types и nullable values, variables/values/parameters/scope, control flow, `return`, `ref`, `out`, методов, массивов, `List<T>`, `Dictionary<TKey, TValue>`, `HashSet<T>`, generics, enums, records, tuples и базовой модели reference types.
+Уже сохранены подтверждённые mental models для basic types и nullable values, variables/values/parameters/scope, control flow, `return`, `ref`, `out`, методов, массивов, `List<T>`, `Dictionary<TKey, TValue>`, `HashSet<T>`, generics, enums, records, tuples, exceptions (`try/catch/finally`) и базовой модели reference types.
 
 - [Basic Types & Nullable Values — типы и nullable](basic-types-nullable.md)
 - [Variables, Values, Parameters & Scope — значения и область видимости](variables-values-scope.md)
@@ -32,10 +32,11 @@
 - [Enums — конечный набор именованных значений](enums.md)
 - [Records — сравнение данных и изменённые копии](records.md)
 - [Tuples — несколько значений как один результат](tuples.md)
+- [Exceptions — обработка исключений](exceptions.md)
 
 ## Текущая тема
 
-После подтверждения tuples следующий неподтверждённый пункт фундаментального блока в `ROADMAP.md` — **exceptions: `try/catch/finally`**.
+После подтверждения exceptions следующий неподтверждённый пункт фундаментального блока в `ROADMAP.md` — **`using`**.
 
 !!! note "Правило раздела"
     Мы не записываем тему как подтверждённую только потому, что она была прочитана. Сначала нужно доказать понимание ответами, примерами и вопросами.
