@@ -1,8 +1,8 @@
-# Enums
+# Enums — именованные наборы значений
 
-[Roadmap](../roadmap.md)
+[← C#](index.md) · [Roadmap](../roadmap.md)
 
-An enum defines a named type with a finite set of named members.
+`enum` объявляет **отдельный именованный тип** с конечным набором именованных членов (*members*).
 
 ```csharp
 enum OrderStatus
@@ -13,11 +13,11 @@ enum OrderStatus
 }
 ```
 
-`OrderStatus` is a type. `OrderStatus.Completed` is a named value. Compared with arbitrary strings, this communicates the expected set of states and prevents accidental use of undeclared member names.
+`OrderStatus` — тип, а `OrderStatus.Completed` — его именованное значение. В отличие от произвольных строк, такой тип явно задаёт ожидаемые состояния и защищает от случайного использования несуществующих имён членов.
 
-An enum member does not need a matching `switch` case to be valid. The enum defines the named members; the switch selects behavior.
+Каждому члену `enum` не обязательно соответствовать ветка `switch`: `enum` определяет допустимые **именованные члены**, а `switch` выбирает поведение.
 
-Numeric values start at zero by default and increment by one. An explicitly assigned number changes the starting point for subsequent implicit values:
+По умолчанию числовые значения начинаются с нуля и увеличиваются на единицу. Явно заданное число меняет начальную точку для следующих членов без собственного значения:
 
 ```csharp
 enum Level
@@ -29,6 +29,6 @@ enum Level
 }
 ```
 
-These numbers are underlying values, not list indexes. An explicit cast such as `(OrderStatus)999` is allowed, even without a matching named member; `Enum.IsDefined` can check defined values.
+Это базовые числовые значения (*underlying values*), а не индексы списка. Явное приведение, например `(OrderStatus)999`, допустимо даже без соответствующего именованного члена. `Enum.IsDefined` позволяет проверить, определено ли такое значение в перечислении.
 
-Use enums for a small known set of states or directions, not arbitrary user names. A `List<OrderStatus>` combines a collection of elements with an enum element type.
+`enum` полезен для небольшого известного набора состояний или направлений, но не для произвольных имён пользователей. `List<OrderStatus>` сочетает коллекцию с типом элементов `enum`.
