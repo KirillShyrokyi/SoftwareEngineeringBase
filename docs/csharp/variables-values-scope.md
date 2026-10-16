@@ -666,4 +666,4 @@ not visible outside its scope
 
 ## Следующий шаг
 
-Базовая модель `ref` и reference types подтверждена на уровне 🟢. Следующий шаг — перейти к более системному устройству классов и объектов: fields, properties, constructors, encapsulation и поведению экземпляров.
+Базовая модель `ref` и reference types подтверждена на уровне 🟢. Раздел OOP (fields, properties, constructors, encapsulation и поведение объектов) позднее также подтверждён отдельно; актуальную следующую тему следует определять по `ROADMAP.md` и [индексу C#](index.md), не по историческому порядку этой заметки.
