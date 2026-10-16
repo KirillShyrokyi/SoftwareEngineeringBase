@@ -25,6 +25,7 @@ nav:
       - Tuples: csharp/tuples.md
       - Exceptions: csharp/exceptions.md
       - Using: csharp/using.md
+      - Namespaces: csharp/namespaces.md
   - OOP:
       - Overview: oop/index.md
       - Class, Object, State & Behavior: oop/class-object-state-behavior.md
