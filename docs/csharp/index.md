@@ -19,6 +19,9 @@
 
 Уже сохранены подтверждённые mental models для basic types и nullable values, variables/values/parameters/scope, control flow, `return`, `ref`, `out`, методов, массивов, `List<T>`, `Dictionary<TKey, TValue>`, `HashSet<T>`, generics, enums, records и базовой модели reference types.
 
+- [Basic Types & Nullable Values — типы и nullable](basic-types-nullable.md)
+- [Variables, Values, Parameters & Scope — значения и область видимости](variables-values-scope.md)
+- [Control Flow & Loops — ветвления и циклы](control-flow-loops.md)
 - [Methods — методы](methods.md)
 - [Out parameters — выходные параметры](out-parameters.md)
 - [Arrays — массивы](arrays.md)
