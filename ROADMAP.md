@@ -72,6 +72,8 @@ Independent engineering work
 - [ ] `using`;
 - [ ] namespaces.
 
+Базовые `List<T>`, `Dictionary<TKey, TValue>` и `HashSet<T>` в этом разделе подтверждены как работа с коллекциями и их основными операциями. Раздел **Collections & Complexity** ниже — отдельный углублённый проход: выбор структуры с учётом стоимости операций, `Queue<T>`, `Stack<T>` и Big O. Его незакрытые пункты не отменяют уже подтверждённую базу.
+
 ### Ментальная модель
 
 ```text
@@ -225,6 +227,8 @@ async = do not waste a thread while waiting for I/O
 ---
 
 ## 9. Memory in C# `Core`
+
+Базовое сравнение по значениям у `record` уже изучено в C# Fundamentals. Пункт `reference equality vs value equality` ниже остаётся отдельной проверкой более общей модели равенства для разных типов; он не закрывается автоматически после знакомства с `record`.
 
 - [ ] value types;
 - [x] reference types;
