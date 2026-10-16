@@ -66,7 +66,7 @@ Independent engineering work
 - [x] `HashSet<T>`;
 - [x] generics;
 - [x] enums;
-- [ ] records;
+- [x] records;
 - [ ] tuples;
 - [ ] exceptions: `try/catch/finally`;
 - [ ] `using`;
