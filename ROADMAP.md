@@ -129,7 +129,7 @@ Dog IS Animal   → inheritance relationship
 - [x] cohesion — логическая цельность ответственности;
 - [x] high cohesion;
 
-Подтверждённая mental model и нейтральные примеры: [Coupling & Cohesion](docs/oop/coupling-cohesion.md). 🟢 Понимаю; самостоятельная практика для 🔵 пока не подтверждена.
+Подтверждённая mental model и нейтральные примеры: [Coupling & Cohesion](https://kirillshyrokyi.github.io/SoftwareEngineeringBase/oop/coupling-cohesion/). 🟢 Понимаю; самостоятельная практика для 🔵 пока не подтверждена.
 
 Связь:
 

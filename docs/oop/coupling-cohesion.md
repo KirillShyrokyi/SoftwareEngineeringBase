@@ -1,6 +1,6 @@
 # Coupling & Cohesion — связанность компонентов и цельность ответственности
 
-[← OOP](index.md) · [Roadmap](../../ROADMAP.md)
+[← OOP](index.md) · [Roadmap](https://kirillshyrokyi.github.io/SoftwareEngineeringBase/roadmap/)
 
 ## 1. Проблема
 
