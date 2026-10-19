@@ -124,10 +124,12 @@ Dog IS Animal   → inheritance relationship
 
 ## 3. Coupling & Cohesion `Core`
 
-- [ ] coupling — связанность компонентов между собой;
-- [ ] low coupling;
-- [ ] cohesion — логическая цельность ответственности;
-- [ ] high cohesion.
+- [x] coupling — связанность компонентов между собой;
+- [x] low coupling;
+- [x] cohesion — логическая цельность ответственности;
+- [x] high cohesion;
+
+Подтверждённая mental model и нейтральные примеры: [Coupling & Cohesion](docs/oop/coupling-cohesion.md). 🟢 Понимаю; самостоятельная практика для 🔵 пока не подтверждена.
 
 Связь:
 

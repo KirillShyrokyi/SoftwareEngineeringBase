@@ -16,6 +16,7 @@
 - Interface
 - Abstract Class
 - Composition vs Inheritance
+- [Coupling & Cohesion](coupling-cohesion.md)
 
 ## Ключевой вопрос
 
