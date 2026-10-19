@@ -38,6 +38,8 @@ nav:
       - Abstract Class: oop/abstract-class.md
       - Composition vs Inheritance: oop/composition-vs-inheritance.md
       - Coupling & Cohesion: oop/coupling-cohesion.md
+  - SOLID:
+      - Single Responsibility Principle: solid/srp.md
 
 theme:
   name: material

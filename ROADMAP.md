@@ -149,7 +149,7 @@ more maintainable system
 
 ## 4. SOLID `Core`
 
-- [ ] **S — Single Responsibility Principle**;
+- [x] **S — Single Responsibility Principle** — 🟢 Понимаю; см. [SRP — принцип единственной ответственности](https://kirillshyrokyi.github.io/SoftwareEngineeringBase/solid/srp/). 🔵 пока не подтверждено самостоятельной реализацией;
 - [ ] **O — Open/Closed Principle**;
 - [ ] **L — Liskov Substitution Principle**;
 - [ ] **I — Interface Segregation Principle**;
